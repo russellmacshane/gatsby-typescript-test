@@ -1,8 +1,8 @@
 import React from "react";
 import { styled } from "@mui/material/styles";
-import Tooltip from "@mui/material/Tooltip";
+import Tooltip, { TooltipProps } from "@mui/material/Tooltip";
 
-const StyledTooltip = styled(({ className, ...props }) => (
+const StyledTooltip = styled(({ className, ...props }: TooltipProps) => (
   <Tooltip {...props} classes={{ popper: className }} />
 ))`
   & .MuiTooltip-arrow {

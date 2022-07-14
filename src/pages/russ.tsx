@@ -17,7 +17,7 @@ const RussTest = () => (
       <RussButton text="Russ Button" />
     </StyledDiv>
     <StyledDiv>
-      <RussTooltip title="Russ Tooltip Test">Tooltip Test Text</RussTooltip>
+      <RussTooltip title="Russ Tooltip Test">Tooltip Test Children!!</RussTooltip>
     </StyledDiv>
   </main>
 );
