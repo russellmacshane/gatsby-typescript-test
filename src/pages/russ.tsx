@@ -1,25 +1,37 @@
 import * as React from "react";
-import { styled } from "@mui/material/styles";
 import Test from "../components/basic/test";
 import RussButton from "../components/basic/russ-button";
 import RussTooltip from "../components/basic/russ-tooltip";
+import Icon from "../images/icon.png";
+import { Container, Stack } from "@mui/material";
+import { styled } from "@mui/material/styles";
 
-const StyledDiv = styled("div")`
-  margin-top: 20px;
+const StyledParagraph = styled("div")`
+  font-weight: bold;
+  font-size: larger;
+  border: 1px solid red;
 `;
 
 const RussTest = () => (
-  <main>
+  <Container>
     <h1>Russ Test</h1>
-    <p>This page is a simple test!</p>
-    <Test input="RUSSELL" />
-    <StyledDiv>
-      <RussButton text="Russ Button" />
-    </StyledDiv>
-    <StyledDiv>
-      <RussTooltip title="Russ Tooltip Test">Tooltip Test Children!!</RussTooltip>
-    </StyledDiv>
-  </main>
+
+    <Stack spacing={3} alignItems="flex-start">
+      <StyledParagraph>This page is a simple test!</StyledParagraph>
+
+      <Stack spacing={2} alignItems="flex-start">
+        <Test input="RUSSELL" />
+        <RussButton text="Russ Button" />
+        <RussTooltip title="Russ Tooltip Test">Tooltip Test Children!!</RussTooltip>
+      </Stack>
+
+      <Stack direction={{ xs: "column", sm: "row" }} spacing={{ xs: 1, sm: 2, md: 4 }}>
+        <img src={Icon} alt="" width={50} />
+        <img src={Icon} alt="" width={50} />
+        <img src={Icon} alt="" width={50} />
+      </Stack>
+    </Stack>
+  </Container>
 );
 
 export default RussTest;
