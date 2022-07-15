@@ -13,8 +13,18 @@ const StyledParagraph = styled("div")`
 `;
 
 const RussTest = () => (
-  <Container>
-    <Box component="h1" sx={{fontSize: "xxx-large", fontFamily: "Monospace"}}>Russ Test</Box>
+  <Container
+    sx={{
+      backgroundColor: "lightgray",
+      paddingTop: "20px",
+      paddingBottom: "25px",
+      borderRadius: "25px",
+      boxShadow: 3,
+    }}
+  >
+    <Box component="h1" sx={{ fontSize: "xxx-large", fontFamily: "Monospace" }}>
+      Russ Test
+    </Box>
 
     <Stack direction={{ xs: "column", sm: "row" }} alignItems="stretch">
       <Stack spacing={3} alignItems="flex-start" sx={{ width: ["100%", "50%"] }}>
@@ -35,7 +45,10 @@ const RussTest = () => (
           <img src={Icon} alt="" width={50} />
         </Stack>
       </Stack>
-      <Stack sx={{ backgroundColor: "DARKSLATEBLUE", width: "50%" }} alignItems="stretch" />
+      <Stack
+        sx={{ backgroundColor: "DARKSLATEBLUE", width: "50%", borderRadius: "25px", boxShadow: 3 }}
+        alignItems="stretch"
+      />
     </Stack>
   </Container>
 );
