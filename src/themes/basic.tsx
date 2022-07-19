@@ -40,6 +40,7 @@ const theme = createTheme({
           backgroundColor: "lightgray",
           paddingTop: "20px",
           paddingBottom: "25px",
+          marginBottom: "25px",
           borderRadius: "25px",
           boxShadow:
             "0px 3px 3px -2px rgb(0 0 0 / 20%), 0px 3px 4px 0px rgb(0 0 0 / 14%), 0px 1px 8px 0px rgb(0 0 0 / 12%)",
